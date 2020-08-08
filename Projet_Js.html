@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Projet_Js.css">
+    <title>Page_De_Jeu</title>
+</head>
+<body>
+            <div>
+                <div >
+
+                    <div style="height:33px ; text-align: center; background-color: rgb(0, 0, 0); color: white; font-size: 32px; font-weight: normal;" > 
+                        |LET'S PLAY, THE SIMPLE WAY TO DO...
+                    </div>
+
+                    <div class="menu" >
+                        <ul>
+                            <li></li>
+                            <li>
+                                <label for="select"  >Veillez selectioner une option de jeu</label>
+                                <select name="number"  id="select" style="width: 100px; height: 40px"  >
+                                    <option value="Pair">Pair</option>
+                                    <option value="Impair">Impair</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option> 
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="logo-containerP">                
+                        <div style="margin: 25px;" class="text"><br><br><br><br><br><br><br>
+                            <label for="number" name="montant" style=" font-size:50px; color: white; font-style: italic; font-weight: bolder;">"Veillez saisi une somme <br> en milliers de francs CFA  <br> (exemple : 10
+                                pour <br>  10 mille francs)..."</label><br><br>
+                            <input type="number" min="1" id= "numero" name="number" style="width: 250px; height: 40px; border-radius: 20px;"  autofocus>
+                        </div>
+
+                        <div class="button_V" ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                            <button class="button_go" type="button" style="font-style: italic; font-weight: 800" name="button_Go" onclick="
+
+
+        let montantJoueur = 100, montantOrdinateur = 0, mise, gain, nombreAleatoire;
+    
+        function jeu() {
+          const select = document.getElementById('select');
+          const msg = document.getElementById('msg');
+          const numero = document.getElementById('numero');
+          const argent = document.getElementsByClassName('argent');
+          const number = document.getElementById('number');
+    
+          mise = parseInt(numero.value);
+          if (mise > 0) {
+            nombreAleatoire = Math.floor(Math.random() * Math.floor(11));
+            alert(nombreAleatoire);
+            if (nombreAleatoire === 0) {
+              montantJoueur -= mise;
+              montantOrdinateur += mise
+              msg.textContent = nombreAleatoire + " Perdu"
+            } else if (nombreAleatoire == select[select.selectedIndex].text) {
+              gain = mise * 36;
+              montantJoueur += gain
+              msg.textContent = nombreAleatoire + " Gagné"
+            } else if (nombreAleatoire % 2 === 0 && select.value === 'pair') {
+              gain = mise * 2;
+              montantJoueur += gain
+              msg.textContent = nombreAleatoire + " Gagné"
+            } else if (nombreAleatoire % 2 != 0 && select.value === 'impair') {
+              gain = mise * 2;
+              montantJoueur += gain
+              msg.textContent = nombreAleatoire + " Gagné"
+            } else {
+              montantJoueur -= mise;
+              montantOrdinateur += mise;
+              msg.textContent = nombreAleatoire + " Perdu"
+            }
+            argent[0].textContent = montantJoueur + " mille FCFA"
+            if (montantOrdinateur != 0) argent[1].textContent = montantOrdinateur + " mille FCFA"
+          }
+        }
+      
+
+
+
+
+
+
+
+                                                                                                                                
+                                                                                                                                let nb = Math.round(Math.random() * 37); 
+                                                                                                                                alert(nb);
+                                                                                                                                let choix=document.getElementById('choix');
+                                                                                                                                alert(choix.innerHTML);
+                                                                                                                                console.log(choix);
+
+                                                                                                                               /* alert('salut');*/
+                                                                                                                               /* let mise= document.Page_De_Jeu.montant.value;*/
+                                                                                                                               /* prompt('quel est votre chois ?','Indiquer choix ici'); 
+                                                                                                                                                                                                                                                                                                             
+                                                                                                                                if(choix==nb){
+                                                                                                                                    alert('gagne')
+                                                                                                                                }else{
+                                                                                                                                    alert('perdu')
+                                                                                                                                }; */
+
+                                                                
+                            
+                                                                                                                            " >
+                                    Go !
+                            </button>
+                        </div>       
+                
+                    </div>
+
+                </div>
+
+            </div>
+
+</body>
+</html>
+

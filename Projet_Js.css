@@ -1,0 +1,113 @@
+.logo-containerI{
+    background-color: teal;
+    height: 570px;
+    margin: auto;
+    padding: 0px;
+}
+.logo-containerP{
+    background-image: url(affiche/index.jpg);
+    background-color: #000;
+    height: 605px;
+    margin: auto;
+    padding: 0px;
+}
+
+
+.text{
+    display: inline-block;
+    float:left;
+    margin: 10px;
+}
+
+
+.menu{
+   background-color: white;
+   width: 1518px;
+   height: 65px;
+   margin: auto;
+   padding: 0px;
+}
+.menu ul{
+    margin-top:0px;
+    padding:0px;
+   
+}
+li{ 
+    display: inline-block;
+    width: 720px; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    font-size: x-large;
+    height: 12px;     
+    font-style: initial;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
+p{
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none ;
+    color: inherit;
+}
+
+.contenuDR{
+    margin: 0 auto;
+    width: 100%;
+    height:2880px;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-size:cover; 
+    background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size: cover;
+}
+.contenuT{
+    margin: 0 auto;
+    width: 100%;
+    height:3300px;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-size:cover; 
+    background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size: cover;
+}
+.stence{
+
+    font-size: x-large;
+    font-weight:bold;
+    text-align: center;
+}
+
+
+
+
+
+
+.button_go {
+    border: 0;
+    line-height: 1.9;
+    padding: 0 20px;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 15px 15px 15px #000;
+    border-radius: 900px;
+    background-color: rgb(255, 1, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 8px 7px 3px rgba(255, 255, 255, .6),
+                inset -8px -9px 3px rgba(0, 0, 0, .6);
+}
+.button_go:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    background-color: rgb(67, 219, 21);
+}
+.button_V{
+    display: inline-block;
+    float: right;
+    margin-right: 400px;
+}
